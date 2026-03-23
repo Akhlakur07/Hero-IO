@@ -1,5 +1,5 @@
 import { Outlet, useNavigation } from "react-router";
-import "../app.css";
+import "../App.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import LoadingSpinner from "../components/LoadingSpinner";
