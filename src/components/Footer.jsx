@@ -1,9 +1,14 @@
+import logo from "../assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="mt-16 bg-[#001931] px-4 pb-6 pt-10 text-white md:px-8">
       <div className="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-6 border-b border-white/10 pb-6 md:flex-row">
         <div>
-          <h3 className="text-xl font-bold">HERO.IO</h3>
+          <div className="flex items-center gap-2">
+            <img src={logo} alt="Hero IO logo" className="size-9 object-contain" />
+            <h3 className="text-xl font-bold">HERO.IO</h3>
+          </div>
           <p className="mt-2 max-w-md text-sm text-white/75">
             Productive apps to help you focus, plan smarter, and ship more every day.
           </p>

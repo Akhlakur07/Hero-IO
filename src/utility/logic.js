@@ -1,7 +1,10 @@
 const INSTALLED_APPS_KEY = "heroio-installed-apps";
 
 export const formatCompact = (value) =>
-  new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }).format(value);
+  new Intl.NumberFormat("en", {
+    notation: "compact",
+    maximumFractionDigits: 1,
+  }).format(value);
 
 export const readInstalledApps = () => {
   const saved = localStorage.getItem(INSTALLED_APPS_KEY);
@@ -24,12 +27,21 @@ export const installApp = (id) => {
 
 export const sortByDownloads = (apps, sort) => {
   const copied = [...apps];
-  if (sort === "high-low") return copied.sort((a, b) => b.downloads - a.downloads);
-  if (sort === "low-high") return copied.sort((a, b) => a.downloads - b.downloads);
+  if (sort === "high-low")
+    return copied.sort((a, b) => b.downloads - a.downloads);
+  if (sort === "low-high")
+    return copied.sort((a, b) => a.downloads - b.downloads);
   return copied;
 };
 
 export const filterByTitle = (apps, query) => {
   if (!query.trim()) return apps;
-  return apps.filter((app) => app.title.toLowerCase().includes(query.toLowerCase()));
+  return apps.filter((app) =>
+    app.title.toLowerCase().includes(query.toLowerCase()),
+  );
+};
+
+export const uninstallApp = (id) => {
+  const installed = readInstalledApps().filter((appId) => appId !== id);
+  localStorage.setItem(INSTALLED_APPS_KEY, JSON.stringify(installed));
 };

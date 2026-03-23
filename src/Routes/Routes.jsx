@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
       { path: "apps", loader: appsLoader, Component: AppsPage },
       { path: "apps/:id", loader: appsLoader, Component: AppDetailsPage },
       { path: "installation", loader: appsLoader, Component: InstallationPage },
+      { path: "*", Component: NotFoundPage },
     ],
   },
-  { path: "*", Component: NotFoundPage },
 ]);

@@ -23,7 +23,7 @@ const AppsPage = () => {
   };
 
   return (
-    <section className="py-10 md:py-14">
+    <section className="py-10 md:py-14 px-4 md:px-20">
       <h1 className="text-3xl font-bold md:text-5xl">Our All Applications</h1>
       <p className="mt-3 text-[#627382] md:text-lg">Explore all apps on the market developed by us. We code for millions.</p>
 
