@@ -15,13 +15,13 @@ const Header = () => {
 
         <nav className="flex items-center gap-6">
           <NavLink to="/" end className={navLinkClass}>
-            home
+            Home
           </NavLink>
           <NavLink to="/apps" className={navLinkClass}>
-            apps
+            Apps
           </NavLink>
           <NavLink to="/installation" className={navLinkClass}>
-            installation
+            Installation
           </NavLink>
         </nav>
 

@@ -1,11 +1,14 @@
 import { Link, useLoaderData } from "react-router";
 import {
+  formatCompact,
   readInstalledApps,
   sortByDownloads,
   uninstallApp,
 } from "../utility/logic";
 import { useMemo, useState } from "react";
 import toast from "react-hot-toast";
+import downloads from "../assets/icon-downloads.png";
+import ratings from "../assets/icon-ratings.png";
 
 const handleUninstall = (id) => {
   uninstallApp(id);
@@ -25,8 +28,8 @@ const InstallationPage = () => {
 
   return (
     <section className="py-10 md:py-14 px-4 md:px-20">
-      <h1 className="text-3xl font-bold md:text-5xl">Your Installed Apps</h1>
-      <p className="mt-3 text-[#627382]">
+      <h1 className="text-3xl font-bold md:text-5xl text-center">Your Installed Apps</h1>
+      <p className="mt-3 text-[#627382] text-center">
         Explore all trending apps on the market developed by us.
       </p>
 
@@ -64,25 +67,50 @@ const InstallationPage = () => {
             <Link
               key={app.id}
               to={`/apps/${app.id}`}
-              className="flex flex-col gap-4 rounded bg-white p-4 shadow-sm transition hover:shadow-md md:flex-row md:items-center md:justify-between"
+              className="flex flex-col gap-4 rounded-lg bg-white p-4 shadow-sm transition hover:shadow-md md:flex-row md:items-center md:justify-between"
             >
+              {/* LEFT SIDE */}
               <div className="flex items-center gap-4">
                 <img
                   src={app.image}
                   alt={app.title}
-                  className="size-20 rounded object-cover"
+                  className="h-20 w-20 rounded-lg object-cover"
                 />
+
                 <div>
                   <h3 className="text-lg font-semibold">{app.title}</h3>
-                  <p className="text-sm text-[#627382]">{app.companyName}</p>
+
+                  {/* INFO ROW */}
+                  <div className="mt-2 flex flex-wrap items-center gap-4 text-sm text-[#627382]">
+                    {/* Downloads */}
+                    <div className="flex items-center gap-1">
+                      <img
+                        src={downloads}
+                        alt="Downloads"
+                        className="h-4 w-4"
+                      />
+                      <span>{formatCompact(app.downloads)}</span>
+                    </div>
+
+                    {/* Ratings */}
+                    <div className="flex items-center gap-1">
+                      <img src={ratings} alt="Ratings" className="h-4 w-4" />
+                      <span>{app.ratingAvg}</span>
+                    </div>
+
+                    {/* Size */}
+                    <div>{app.size} MB</div>
+                  </div>
                 </div>
               </div>
+
+              {/* RIGHT SIDE BUTTON */}
               <button
                 onClick={(e) => {
-                  e.preventDefault(); // prevent Link navigation
+                  e.preventDefault();
                   handleUninstall(app.id);
                 }}
-                className="rounded bg-red-500 px-4 py-2 text-sm font-semibold text-white hover:bg-red-600"
+                className="w-full rounded bg-[#00D390] px-4 py-2 text-sm font-semibold text-white transition md:w-auto"
               >
                 Uninstall
               </button>
