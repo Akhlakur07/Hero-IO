@@ -32,7 +32,7 @@ A modern, responsive web application built with React and Vite that showcases pr
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Akhlakur07/Hero-IO.git
    cd HeroIO
    ```
 
