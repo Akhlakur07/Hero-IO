@@ -14,6 +14,7 @@ import { formatCompact, installApp, isAppInstalled } from "../utility/logic";
 import downloads from "../assets/icon-downloads.png";
 import ratings from "../assets/icon-ratings.png";
 import review from "../assets/icon-review.png";
+import apperror from "../assets/App-Error.png";
 
 const AppDetailsPage = () => {
   const apps = useLoaderData();
@@ -29,6 +30,7 @@ const AppDetailsPage = () => {
   if (!app) {
     return (
       <section className="flex min-h-[60vh] flex-col items-center justify-center text-center px-4">
+        <img src={apperror} alt="AppNotFound"/>
         <h1 className="text-4xl font-bold text-[#001931]">
           OPPS!! APP NOT FOUND
         </h1>

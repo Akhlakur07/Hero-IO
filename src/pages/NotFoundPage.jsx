@@ -7,7 +7,7 @@ const NotFoundPage = () => {
       <img
         src={error404}
         alt="404 illustration"
-        className="w-full max-w-[320px] object-contain md:max-w-[500px]"
+        className="w-full max-w-[320px] object-contain md:max-w-125"
       />
       <h1 className="mt-6 text-4xl font-semibold tracking-[-0.02em] text-[#001931] md:text-6xl">
         Oops, page not found!
