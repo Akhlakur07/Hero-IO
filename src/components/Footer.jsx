@@ -1,4 +1,7 @@
 import logo from "../assets/logo.png";
+import { TiSocialLinkedin } from "react-icons/ti";
+import { FaXTwitter } from "react-icons/fa6";
+import { AiFillGithub } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -6,25 +9,24 @@ const Footer = () => {
       <div className="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-6 border-b border-white/10 pb-6 md:flex-row">
         <div>
           <div className="flex items-center gap-2">
-            <img src={logo} alt="Hero IO logo" className="size-9 object-contain" />
+            <img
+              src={logo}
+              alt="Hero IO logo"
+              className="size-9 object-contain"
+            />
             <h3 className="text-xl font-bold">HERO.IO</h3>
           </div>
           <p className="mt-2 max-w-md text-sm text-white/75">
-            Productive apps to help you focus, plan smarter, and ship more every day.
+            Productive apps to help you focus, plan smarter, and ship more every
+            day.
           </p>
         </div>
         <div>
           <h4 className="text-lg font-medium">Social Links</h4>
           <div className="mt-3 flex gap-3 text-sm text-white/80">
-            <a href="https://github.com" target="_blank" rel="noreferrer">
-              GitHub
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-              LinkedIn
-            </a>
-            <a href="https://x.com" target="_blank" rel="noreferrer">
-              X
-            </a>
+            <AiFillGithub />
+            <TiSocialLinkedin />
+            <FaXTwitter />
           </div>
         </div>
       </div>

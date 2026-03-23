@@ -21,7 +21,7 @@ const AppDetailsPage = () => {
 
   const app = useMemo(
     () => apps.find((item) => item.id === Number(id)),
-    [apps, id]
+    [apps, id],
   );
 
   const [justInstalled, setJustInstalled] = useState(false);
@@ -37,7 +37,7 @@ const AppDetailsPage = () => {
         </p>
         <Link
           to="/apps"
-          className="mt-6 rounded bg-gradient-to-r from-[#632EE3] to-[#9f62f2] px-6 py-3 font-semibold text-white"
+          className="mt-6 rounded bg-linear-to-r from-[#632EE3] to-[#9f62f2] px-6 py-3 font-semibold text-white"
         >
           Browse Apps
         </Link>
@@ -48,8 +48,7 @@ const AppDetailsPage = () => {
   const installed = justInstalled || isAppInstalled(app.id);
 
   const ratingChartData = [...app.ratings].sort(
-    (a, b) =>
-      Number(b.name.split(" ")[0]) - Number(a.name.split(" ")[0])
+    (a, b) => Number(b.name.split(" ")[0]) - Number(a.name.split(" ")[0]),
   );
 
   const handleInstall = () => {
@@ -60,54 +59,40 @@ const AppDetailsPage = () => {
 
   return (
     <section className="py-10 md:py-14 px-4 md:px-20">
-
       {/* TOP SECTION */}
       <div className="grid gap-8 rounded-lg bg-white p-6 shadow-sm md:grid-cols-[320px_1fr]">
-        
         <img
           src={app.image}
           alt={app.title}
-          className="h-[260px] w-full rounded-lg object-cover md:h-[320px]"
+          className="h-65 w-full rounded-lg object-cover md:h-80"
         />
 
         <div>
-          <h1 className="text-3xl font-bold md:text-4xl">
-            {app.title}
-          </h1>
+          <h1 className="text-3xl font-bold md:text-4xl">{app.title}</h1>
 
-          <p className="mt-2 text-lg text-[#627382]">
-            Developed by {app.companyName}
+          <p className="mt-2 text-lg text-[#627382] border-b border-[#e0e0e0] pb-4">
+            Developed by{" "}
+            <span className="text-[#632EE3]">{app.companyName}</span>
           </p>
 
           {/* STATS */}
           <div className="mt-6 grid grid-cols-2 gap-5 sm:grid-cols-3">
-
-            <div className="flex items-center gap-3">
-              <img src={ratings} className="h-6 w-6" />
-              <div>
-                <p className="text-sm text-[#627382]">Rating</p>
-                <p className="font-semibold">{app.ratingAvg}</p>
-              </div>
+            <div>
+              <img src={downloads} />
+              <p className="text-[#627382]">Downloads</p>
+              <p className="font-extrabold text-[40px]">{formatCompact(app.downloads)}</p>
             </div>
 
-            <div className="flex items-center gap-3">
-              <img src={downloads} className="h-6 w-6" />
-              <div>
-                <p className="text-sm text-[#627382]">Downloads</p>
-                <p className="font-semibold">
-                  {formatCompact(app.downloads)}
-                </p>
-              </div>
+            <div>
+              <img src={ratings}/>
+              <p className="text-[#627382]">Average Ratings</p>
+              <p className="font-extrabold text-[40px]">{app.ratingAvg}</p>
             </div>
 
-            <div className="flex items-center gap-3">
-              <img src={review} className="h-6 w-6" />
-              <div>
-                <p className="text-sm text-[#627382]">Reviews</p>
-                <p className="font-semibold">
-                  {formatCompact(app.reviews)}
-                </p>
-              </div>
+            <div>
+              <img src={review}/>
+              <p className="text-[#627382]">Reviews</p>
+              <p className="font-extrabold text-[40px]">{formatCompact(app.reviews)}</p>
             </div>
           </div>
 
@@ -115,7 +100,7 @@ const AppDetailsPage = () => {
           <button
             onClick={handleInstall}
             disabled={installed}
-            className="mt-8 w-full md:w-auto rounded bg-gradient-to-r from-[#632EE3] to-[#9f62f2] px-8 py-3 font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
+            className="mt-8 w-full md:w-auto rounded bg-[#00d390] px-8 py-3 font-semibold text-white transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {installed ? "Installed" : "Install Now"} ({app.size} MB)
           </button>
@@ -144,7 +129,7 @@ const AppDetailsPage = () => {
 
               <XAxis
                 type="number"
-                domain={[0, "dataMax"]}   // FIXED
+                domain={[0, "dataMax"]} // FIXED
                 axisLine={false}
                 tickLine={false}
               />
@@ -165,9 +150,7 @@ const AppDetailsPage = () => {
       {/* DESCRIPTION */}
       <div className="mt-10 rounded-lg bg-white p-6 shadow-sm">
         <h2 className="text-2xl font-bold">Description</h2>
-        <p className="mt-4 leading-7 text-[#4d5a66]">
-          {app.description}
-        </p>
+        <p className="mt-4 leading-7 text-[#4d5a66]">{app.description}</p>
       </div>
     </section>
   );

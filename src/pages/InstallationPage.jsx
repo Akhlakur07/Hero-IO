@@ -110,7 +110,7 @@ const InstallationPage = () => {
                   e.preventDefault();
                   handleUninstall(app.id);
                 }}
-                className="w-full rounded bg-[#00D390] px-4 py-2 text-sm font-semibold text-white transition md:w-auto"
+                className="w-full rounded bg-[#00d390] px-4 py-2 text-sm font-semibold text-white transition md:w-auto"
               >
                 Uninstall
               </button>
