@@ -2,7 +2,7 @@
 
 A modern, responsive web application built with React and Vite that showcases productivity and utility applications with detailed information, ratings, downloads statistics, and visualization charts.
 
-🔗 **[Live Demo](https://hero-io67.netlify.app/)**
+🔗 **[Live Demo](https://hero-io-l1h8.vercel.app/)**
 
 ## 🎯 Features
 
