@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&w=900&q=80",
+    "title": "Forest: Focus for Productivity",
+    "companyName": "productive.io",
+    "description": "Forest helps you focus with deep-work timers, distraction blocking, and progress insights. Build momentum with daily streaks and gentle reminders that keep you on track.",
+    "size": 42,
+    "reviews": 154320,
+    "ratingAvg": 4.8,
+    "downloads": 9200000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 2400 },
+      { "name": "3 star", "count": 7500 },
+      { "name": "4 star", "count": 33200 },
+      { "name": "5 star", "count": 110020 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=900&q=80",
+    "title": "SmPlan: ToDo List with Reminder",
+    "companyName": "productive.io",
+    "description": "SmPlan combines task lists, smart reminders, and weekly planning boards. Organize personal and team work in one place while tracking completion trends over time.",
+    "size": 38,
+    "reviews": 89320,
+    "ratingAvg": 4.7,
+    "downloads": 7800000,
+    "ratings": [
+      { "name": "1 star", "count": 890 },
+      { "name": "2 star", "count": 1700 },
+      { "name": "3 star", "count": 4200 },
+      { "name": "4 star", "count": 18900 },
+      { "name": "5 star", "count": 63630 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+    "title": "FLIP - Focus Timer for Study",
+    "companyName": "Studyverse Labs",
+    "description": "FLIP is a minimal Pomodoro timer made for students and creators. Tune work-break cycles, set goals, and review your focus analytics session by session.",
+    "size": 35,
+    "reviews": 65520,
+    "ratingAvg": 4.6,
+    "downloads": 6100000,
+    "ratings": [
+      { "name": "1 star", "count": 1100 },
+      { "name": "2 star", "count": 2300 },
+      { "name": "3 star", "count": 5100 },
+      { "name": "4 star", "count": 17400 },
+      { "name": "5 star", "count": 39620 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=900&q=80",
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "Focus Cat Studio",
+    "description": "Pomocat adds a playful experience to concentration. Stay motivated with animated milestones, built-in white noise, and consistent focus streak tracking.",
+    "size": 31,
+    "reviews": 40120,
+    "ratingAvg": 4.5,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 980 },
+      { "name": "2 star", "count": 1600 },
+      { "name": "3 star", "count": 3900 },
+      { "name": "4 star", "count": 12100 },
+      { "name": "5 star", "count": 21540 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80",
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "Clockwise Byte",
+    "description": "Time Planner gives you drag-and-drop scheduling, recurring plans, and daily habit overlays. Turn your goals into routine with clear visual timelines.",
+    "size": 47,
+    "reviews": 120120,
+    "ratingAvg": 4.7,
+    "downloads": 8700000,
+    "ratings": [
+      { "name": "1 star", "count": 1300 },
+      { "name": "2 star", "count": 2200 },
+      { "name": "3 star", "count": 6200 },
+      { "name": "4 star", "count": 25200 },
+      { "name": "5 star", "count": 85220 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80",
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "Habito Labs",
+    "description": "Build and sustain better mornings with personalized routine flows, habit alarms, and micro-goal checklists that keep your momentum high each day.",
+    "size": 29,
+    "reviews": 28210,
+    "ratingAvg": 4.4,
+    "downloads": 3300000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 1200 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 9100 },
+      { "name": "5 star", "count": 14210 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=900&q=80",
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "Greentime Inc.",
+    "description": "Grow a virtual garden while you stay away from distractions. Focus Plant rewards uninterrupted sessions and visualizes long-term productivity growth.",
+    "size": 40,
+    "reviews": 73300,
+    "ratingAvg": 4.6,
+    "downloads": 5400000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 4600 },
+      { "name": "4 star", "count": 17000 },
+      { "name": "5 star", "count": 49300 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=900&q=80",
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "Wakeup Works",
+    "description": "Alarmy helps you wake up consistently with challenge-based alarms, sleep tracking, and bedtime routines that improve your daily energy levels.",
+    "size": 51,
+    "reviews": 112000,
+    "ratingAvg": 4.5,
+    "downloads": 9800000,
+    "ratings": [
+      { "name": "1 star", "count": 3400 },
+      { "name": "2 star", "count": 5200 },
+      { "name": "3 star", "count": 13000 },
+      { "name": "4 star", "count": 29000 },
+      { "name": "5 star", "count": 61400 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=900&q=80",
+    "title": "Zen Notes: Minimal Journal",
+    "companyName": "Softpeak Studio",
+    "description": "Capture ideas with a distraction-free interface. Zen Notes supports markdown, tags, and cloud sync to keep your journal and notes always accessible.",
+    "size": 24,
+    "reviews": 22300,
+    "ratingAvg": 4.3,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 480 },
+      { "name": "2 star", "count": 980 },
+      { "name": "3 star", "count": 2100 },
+      { "name": "4 star", "count": 6400 },
+      { "name": "5 star", "count": 12340 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80",
+    "title": "TaskPilot: Team Tasks",
+    "companyName": "Orbitflow",
+    "description": "Plan sprints, assign owners, and monitor delivery health. TaskPilot is built for small teams who need speed, clarity, and reliable collaboration.",
+    "size": 53,
+    "reviews": 94110,
+    "ratingAvg": 4.7,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 900 },
+      { "name": "2 star", "count": 1800 },
+      { "name": "3 star", "count": 5300 },
+      { "name": "4 star", "count": 23500 },
+      { "name": "5 star", "count": 62610 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=900&q=80",
+    "title": "FocusFlow Music",
+    "companyName": "Calm Signal",
+    "description": "Stay in deep work mode with adaptive ambient soundscapes and timer-aware audio transitions designed for coding, writing, and studying.",
+    "size": 67,
+    "reviews": 56120,
+    "ratingAvg": 4.4,
+    "downloads": 3900000,
+    "ratings": [
+      { "name": "1 star", "count": 1100 },
+      { "name": "2 star", "count": 1900 },
+      { "name": "3 star", "count": 4200 },
+      { "name": "4 star", "count": 13800 },
+      { "name": "5 star", "count": 35120 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=900&q=80",
+    "title": "Weekly Sprint Board",
+    "companyName": "Kanline",
+    "description": "Organize your week with kanban-style boards, custom labels, and progress snapshots. Keep your personal and professional tasks aligned.",
+    "size": 36,
+    "reviews": 47190,
+    "ratingAvg": 4.6,
+    "downloads": 4300000,
+    "ratings": [
+      { "name": "1 star", "count": 780 },
+      { "name": "2 star", "count": 1430 },
+      { "name": "3 star", "count": 3600 },
+      { "name": "4 star", "count": 12900 },
+      { "name": "5 star", "count": 28480 }
+    ]
+  }
+]

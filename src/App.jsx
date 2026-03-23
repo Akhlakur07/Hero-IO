@@ -1,13 +1,3 @@
-import React from 'react';
-import './App.css'
+const App = () => null;
 
-const App = () => {
-
-  return (
-    <div className='inter-font'>
-
-    </div>
-  )
-}
-
-export default App
+export default App;
